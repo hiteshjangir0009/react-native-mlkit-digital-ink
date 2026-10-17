@@ -6,4 +6,10 @@ require "#{ws_dir}/node_modules/react-native-test-app/test_app.rb"
 
 workspace 'ReactNativeMlkitDigitalInkExample.xcworkspace'
 
+# GoogleMLKit/DigitalInkRecognition requires iOS 15.5+, above RN's own
+# 15.1 floor — override the deployment target before use_test_app! sets
+# its own (lower) default; see react-native-test-app's test_app.rb, which
+# deliberately rescues a re-assignment here to allow this override.
+platform :ios, '15.5'
+
 use_test_app! :hermes_enabled => true, :fabric_enabled => true

@@ -1,7 +1,7 @@
 {
-  "name": "@goaid/react-native-mlkit-digital-ink",
+  "name": "@hiteshjangir0009/react-native-mlkit-digital-ink",
   "version": "0.1.0",
-  "description": "React Native module for Google ML Kit Digital Ink Recognition with pluggable custom TensorFlow Lite recognizer and native ink-capture Fabric view",
+  "description": "React Native module for Google ML Kit Digital Ink Recognition with a pluggable custom TensorFlow Lite recognizer and a native ink-capture view",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
@@ -80,8 +80,8 @@
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react": ">=18.0.0",
+    "react-native": ">=0.76.0"
   },
   "workspaces": [
     "example"
@@ -107,10 +107,17 @@
   },
   "codegenConfig": {
     "name": "ReactNativeMlkitDigitalInkSpec",
-    "type": "modules",
+    "type": "all",
     "jsSrcsDir": "src",
     "android": {
       "javaPackageName": "com.goaid.reactnativemlkitdigitalink"
+    },
+    "ios": {
+      "components": {
+        "DigitalInkCanvasView": {
+          "className": "DigitalInkCanvasViewComponentView"
+        }
+      }
     }
   },
   "prettier": {

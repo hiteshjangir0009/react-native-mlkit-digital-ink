@@ -52,4 +52,9 @@ android {
 
 dependencies {
   implementation "com.facebook.react:react-android"
+
+  implementation "com.google.mlkit:digital-ink-recognition:18.1.0"
+  implementation "org.tensorflow:tensorflow-lite:2.16.1"
+  implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"
+  implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1"
 }
