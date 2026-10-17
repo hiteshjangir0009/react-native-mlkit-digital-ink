@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.recognizer
+package com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer
 
 import com.google.mlkit.vision.digitalink.Ink
 import java.nio.ByteBuffer

@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.model
+package com.hiteshjangir0009.reactnativemlkitdigitalink.model
 
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.ReadableArray
@@ -6,9 +6,9 @@ import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.bridge.WritableArray
 import com.facebook.react.bridge.WritableMap
 import com.google.mlkit.vision.digitalink.Ink
-import com.goaid.reactnativemlkitdigitalink.recognizer.RecognitionCandidateResult
-import com.goaid.reactnativemlkitdigitalink.recognizer.RecognitionResultData
-import com.goaid.reactnativemlkitdigitalink.view.CapturedStroke
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.RecognitionCandidateResult
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.RecognitionResultData
+import com.hiteshjangir0009.reactnativemlkitdigitalink.view.CapturedStroke
 
 /**
  * Converts between the JS-bridge representation (ReadableMap/WritableMap, as

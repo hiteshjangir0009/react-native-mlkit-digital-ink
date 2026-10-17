@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.recognizer
+package com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer
 
 /** Plain, backend-agnostic result shape both [MlKitRecognizerBackend] and
  * [CustomTfliteRecognizerBackend] return, so the TurboModule method doesn't

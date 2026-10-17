@@ -2,12 +2,12 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@goaid/react-native-mlkit-digital-ink": ["./src/index"]
+      "@hiteshjangir0009/react-native-mlkit-digital-ink": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "customConditions": [
-      "goaid-react-native-mlkit-digital-ink-source"
+      "hiteshjangir0009-react-native-mlkit-digital-ink-source"
     ],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

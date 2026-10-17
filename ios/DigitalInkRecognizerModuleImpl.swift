@@ -15,7 +15,7 @@ import React
 /// with `as?`/optional-binding, never force-unwrapped or force-cast.
 @objc(DigitalInkRecognizerModuleImpl)
 public final class DigitalInkRecognizerModuleImpl: NSObject {
-  private let queue = DispatchQueue(label: "com.goaid.digitalink.recognizer", qos: .userInitiated)
+  private let queue = DispatchQueue(label: "com.hiteshjangir0009.digitalink.recognizer", qos: .userInitiated)
   private let mlkitBackend = MlKitRecognizerBackend()
   private let customBackend = CustomTfliteRecognizerBackend()
 

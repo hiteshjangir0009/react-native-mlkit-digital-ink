@@ -10,7 +10,7 @@ import {
   recognize,
   registerCustomModel,
   type RecognitionResult,
-} from '@goaid/react-native-mlkit-digital-ink';
+} from '@hiteshjangir0009/react-native-mlkit-digital-ink';
 
 const LANGUAGE_TAG = 'en';
 const CUSTOM_MODEL_ID = 'stub';

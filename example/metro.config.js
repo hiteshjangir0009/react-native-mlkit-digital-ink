@@ -13,7 +13,7 @@ const root = path.resolve(__dirname, '..');
 const config = withMetroConfig(getDefaultConfig(__dirname), {
   root,
   dirname: __dirname,
-  conditions: ['goaid-react-native-mlkit-digital-ink-source'],
+  conditions: ['hiteshjangir0009-react-native-mlkit-digital-ink-source'],
 });
 
 module.exports = config;

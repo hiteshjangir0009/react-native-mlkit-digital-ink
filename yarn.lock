@@ -1654,9 +1654,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goaid/react-native-mlkit-digital-ink-example@workspace:example":
+"@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
+  version: 9.3.0
+  resolution: "@hapi/hoek@npm:9.3.0"
+  checksum: 10c0/a096063805051fb8bba4c947e293c664b05a32b47e13bc654c0dd43813a1cec993bdd8f29ceb838020299e1d0f89f68dc0d62a603c13c9cc8541963f0beca055
+  languageName: node
+  linkType: hard
+
+"@hapi/topo@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@hapi/topo@npm:5.1.0"
+  dependencies:
+    "@hapi/hoek": "npm:^9.0.0"
+  checksum: 10c0/b16b06d9357947149e032bdf10151eb71aea8057c79c4046bf32393cb89d0d0f7ca501c40c0f7534a5ceca078de0700d2257ac855c15e59fe4e00bba2f25c86f
+  languageName: node
+  linkType: hard
+
+"@hiteshjangir0009/react-native-mlkit-digital-ink-example@workspace:example":
   version: 0.0.0-use.local
-  resolution: "@goaid/react-native-mlkit-digital-ink-example@workspace:example"
+  resolution: "@hiteshjangir0009/react-native-mlkit-digital-ink-example@workspace:example"
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.3"
@@ -1678,9 +1694,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@goaid/react-native-mlkit-digital-ink@workspace:.":
+"@hiteshjangir0009/react-native-mlkit-digital-ink@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@goaid/react-native-mlkit-digital-ink@workspace:."
+  resolution: "@hiteshjangir0009/react-native-mlkit-digital-ink@workspace:."
   dependencies:
     "@eslint/compat": "npm:^2.1.0"
     "@eslint/eslintrc": "npm:^3.3.6"
@@ -1703,26 +1719,10 @@ __metadata:
     turbo: "npm:^2.10.8"
     typescript: "npm:^6.0.3"
   peerDependencies:
-    react: "*"
-    react-native: "*"
+    react: ">=18.0.0"
+    react-native: ">=0.76.0"
   languageName: unknown
   linkType: soft
-
-"@hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.3.0":
-  version: 9.3.0
-  resolution: "@hapi/hoek@npm:9.3.0"
-  checksum: 10c0/a096063805051fb8bba4c947e293c664b05a32b47e13bc654c0dd43813a1cec993bdd8f29ceb838020299e1d0f89f68dc0d62a603c13c9cc8541963f0beca055
-  languageName: node
-  linkType: hard
-
-"@hapi/topo@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "@hapi/topo@npm:5.1.0"
-  dependencies:
-    "@hapi/hoek": "npm:^9.0.0"
-  checksum: 10c0/b16b06d9357947149e032bdf10151eb71aea8057c79c4046bf32393cb89d0d0f7ca501c40c0f7534a5ceca078de0700d2257ac855c15e59fe4e00bba2f25c86f
-  languageName: node
-  linkType: hard
 
 "@humanfs/core@npm:^0.19.2":
   version: 0.19.2

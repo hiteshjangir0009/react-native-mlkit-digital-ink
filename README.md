@@ -1,4 +1,4 @@
-# @goaid/react-native-mlkit-digital-ink
+# @hiteshjangir0009/react-native-mlkit-digital-ink
 
 React Native (New Architecture only — TurboModule + Fabric) wrapper around Google ML Kit's on-device Digital Ink Recognition, plus a pluggable custom TensorFlow Lite recognizer for domain-specific handwriting (e.g. clinical/doctor handwriting) that ML Kit's own models were never trained on.
 
@@ -23,7 +23,7 @@ React Native (New Architecture only — TurboModule + Fabric) wrapper around Goo
 ## Installation
 
 ```sh
-npm install @goaid/react-native-mlkit-digital-ink
+npm install @hiteshjangir0009/react-native-mlkit-digital-ink
 cd ios && pod install
 ```
 
@@ -37,7 +37,7 @@ import {
   downloadModel,
   isModelDownloaded,
   recognize,
-} from '@goaid/react-native-mlkit-digital-ink';
+} from '@hiteshjangir0009/react-native-mlkit-digital-ink';
 
 function HandwritingInput() {
   const canvasRef = useRef<DigitalInkCanvasHandle>(null);
@@ -67,7 +67,7 @@ function HandwritingInput() {
 ML Kit's Digital Ink Recognition is a closed set of Google-trained per-language models — there is no API to retrain or fine-tune it. To recognize handwriting it wasn't trained for (e.g. medical shorthand), train your own TensorFlow Lite model separately and register it:
 
 ```ts
-import { registerCustomModel, recognize } from '@goaid/react-native-mlkit-digital-ink';
+import { registerCustomModel, recognize } from '@hiteshjangir0009/react-native-mlkit-digital-ink';
 
 await registerCustomModel({
   modelId: 'clinical-v1',

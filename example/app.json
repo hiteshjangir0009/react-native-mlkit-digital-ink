@@ -30,9 +30,9 @@
     ]
   },
   "android": {
-    "package": "goaid.reactnativemlkitdigitalink.example"
+    "package": "hiteshjangir0009.reactnativemlkitdigitalink.example"
   },
   "ios": {
-    "bundleIdentifier": "goaid.reactnativemlkitdigitalink.example"
+    "bundleIdentifier": "hiteshjangir0009.reactnativemlkitdigitalink.example"
   }
 }

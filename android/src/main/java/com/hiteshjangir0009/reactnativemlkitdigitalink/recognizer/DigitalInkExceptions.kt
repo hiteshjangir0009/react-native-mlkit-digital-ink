@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.recognizer
+package com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer
 
 /**
  * Base for every typed failure this module can produce. [code] is sent

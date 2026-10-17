@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.recognizer
+package com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer
 
 /** Mirrors the JS `CustomModelTensorSpec` type (see `src/types.ts`). */
 data class CustomModelTensorSpec(

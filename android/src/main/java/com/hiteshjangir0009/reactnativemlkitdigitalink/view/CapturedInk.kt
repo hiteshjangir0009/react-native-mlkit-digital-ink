@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.view
+package com.hiteshjangir0009.reactnativemlkitdigitalink.view
 
 /** A single sampled touch point, in view-local pixel coordinates. */
 data class CapturedPoint(val x: Float, val y: Float, val t: Long)

@@ -36,7 +36,7 @@ if (project.extensions.findByName("kotlin") == null) {
 apply plugin: "com.facebook.react"
 
 android {
-  namespace "com.goaid.reactnativemlkitdigitalink"
+  namespace "com.hiteshjangir0009.reactnativemlkitdigitalink"
 
   compileSdkVersion getExtOrDefault("compileSdkVersion")
 

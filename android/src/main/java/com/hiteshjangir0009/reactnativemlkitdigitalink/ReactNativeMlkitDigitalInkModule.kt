@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink
+package com.hiteshjangir0009.reactnativemlkitdigitalink
 
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
@@ -6,15 +6,15 @@ import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.bridge.WritableArray
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.UiThreadUtil
-import com.goaid.reactnativemlkitdigitalink.model.InkMapper
-import com.goaid.reactnativemlkitdigitalink.recognizer.CustomModelRegistrationData
-import com.goaid.reactnativemlkitdigitalink.recognizer.CustomModelTensorSpec
-import com.goaid.reactnativemlkitdigitalink.recognizer.CustomTfliteRecognizerBackend
-import com.goaid.reactnativemlkitdigitalink.recognizer.DigitalInkException
-import com.goaid.reactnativemlkitdigitalink.recognizer.InvalidConfigException
-import com.goaid.reactnativemlkitdigitalink.recognizer.MlKitRecognizerBackend
-import com.goaid.reactnativemlkitdigitalink.recognizer.ViewNotFoundException
-import com.goaid.reactnativemlkitdigitalink.view.DigitalInkCanvasView
+import com.hiteshjangir0009.reactnativemlkitdigitalink.model.InkMapper
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.CustomModelRegistrationData
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.CustomModelTensorSpec
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.CustomTfliteRecognizerBackend
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.DigitalInkException
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.InvalidConfigException
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.MlKitRecognizerBackend
+import com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer.ViewNotFoundException
+import com.hiteshjangir0009.reactnativemlkitdigitalink.view.DigitalInkCanvasView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

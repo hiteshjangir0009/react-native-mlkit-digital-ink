@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.recognizer
+package com.hiteshjangir0009.reactnativemlkitdigitalink.recognizer
 
 import com.google.mlkit.common.MlKitException
 import com.google.mlkit.common.model.DownloadConditions

@@ -1,4 +1,4 @@
-package com.goaid.reactnativemlkitdigitalink.view
+package com.hiteshjangir0009.reactnativemlkitdigitalink.view
 
 import android.content.Context
 import android.graphics.Canvas

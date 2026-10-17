@@ -6,7 +6,7 @@
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
     ".": {
-      "goaid-react-native-mlkit-digital-ink-source": "./src/index.tsx",
+      "hiteshjangir0009-react-native-mlkit-digital-ink-source": "./src/index.tsx",
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },
@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace @goaid/react-native-mlkit-digital-ink-example",
+    "example": "yarn workspace @hiteshjangir0009/react-native-mlkit-digital-ink-example",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
     "typecheck": "tsc",
@@ -46,14 +46,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goaid/react-native-mlkit-digital-ink.git"
+    "url": "git+https://github.com/hiteshjangir0009/react-native-mlkit-digital-ink.git"
   },
-  "author": "Hitesh <kv@goaid.in> (https://github.com/goaid)",
+  "author": "Hitesh <hiteshjangir542@gmail.com> (https://github.com/hiteshjangir0009)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goaid/react-native-mlkit-digital-ink/issues"
+    "url": "https://github.com/hiteshjangir0009/react-native-mlkit-digital-ink/issues"
   },
-  "homepage": "https://github.com/goaid/react-native-mlkit-digital-ink#readme",
+  "homepage": "https://github.com/hiteshjangir0009/react-native-mlkit-digital-ink#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -110,7 +110,7 @@
     "type": "all",
     "jsSrcsDir": "src",
     "android": {
-      "javaPackageName": "com.goaid.reactnativemlkitdigitalink"
+      "javaPackageName": "com.hiteshjangir0009.reactnativemlkitdigitalink"
     },
     "ios": {
       "components": {
