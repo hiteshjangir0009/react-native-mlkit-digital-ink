@@ -47,27 +47,28 @@ class DigitalInkCanvasViewManager :
   override fun addEventEmitters(reactContext: ThemedReactContext, view: DigitalInkCanvasView) {
     view.setListeners(
       onStrokeStart = { strokeIndex ->
-        dispatchEvent(reactContext) { surfaceId -> StrokeStartEvent(surfaceId, view.id, strokeIndex) }
+        dispatchEvent(reactContext, view.id) { surfaceId -> StrokeStartEvent(surfaceId, view.id, strokeIndex) }
       },
       onStrokeEnd = { strokeIndex, pointCount ->
-        dispatchEvent(reactContext) { surfaceId ->
+        dispatchEvent(reactContext, view.id) { surfaceId ->
           StrokeEndEvent(surfaceId, view.id, strokeIndex, pointCount)
         }
       },
       onCanvasChange = { strokeCount ->
-        dispatchEvent(reactContext) { surfaceId -> CanvasChangeEvent(surfaceId, view.id, strokeCount) }
+        dispatchEvent(reactContext, view.id) { surfaceId -> CanvasChangeEvent(surfaceId, view.id, strokeCount) }
       }
     )
   }
 
   private inline fun dispatchEvent(
     reactContext: ReactContext,
+    viewTag: Int,
     crossinline makeEvent: (surfaceId: Int) -> com.facebook.react.uimanager.events.Event<*>
   ) {
     // Defensive: the view can fire a trailing touch-driven callback in the
     // brief window between detach and full teardown. Resolving a null
     // dispatcher/surface just drops the event instead of crashing.
-    val dispatcher = UIManagerHelper.getEventDispatcher(reactContext) ?: return
+    val dispatcher = UIManagerHelper.getEventDispatcherForReactTag(reactContext, viewTag) ?: return
     val surfaceId = UIManagerHelper.getSurfaceId(reactContext)
     dispatcher.dispatchEvent(makeEvent(surfaceId))
   }
