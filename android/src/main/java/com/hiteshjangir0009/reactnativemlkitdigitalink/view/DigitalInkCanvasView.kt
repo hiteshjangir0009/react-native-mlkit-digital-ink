@@ -5,7 +5,6 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
-import android.os.SystemClock
 import android.view.MotionEvent
 import android.view.View
 import com.facebook.react.bridge.ReactContext
@@ -73,7 +72,14 @@ class DigitalInkCanvasView(context: Context) : View(context) {
   override fun onTouchEvent(event: MotionEvent): Boolean {
     when (event.actionMasked) {
       MotionEvent.ACTION_DOWN -> {
-        val stroke = mutableListOf(CapturedPoint(event.x, event.y, SystemClock.elapsedRealtime()))
+        // event.eventTime (and getHistoricalEventTime below) are both in the
+        // uptimeMillis time base. Mixing in SystemClock.elapsedRealtime()
+        // here would straddle two different clocks that drift apart by the
+        // device's accumulated deep-sleep time, scrambling a stroke's point
+        // ordering — which corrupts the timing signal ML Kit's recognizer
+        // relies on, even though x/y (and thus the rendered drawing) stay
+        // unaffected.
+        val stroke = mutableListOf(CapturedPoint(event.x, event.y, event.eventTime))
         currentStroke = stroke
         onStrokeStartListener?.invoke(strokes.size)
       }
@@ -87,7 +93,7 @@ class DigitalInkCanvasView(context: Context) : View(context) {
           stroke.add(CapturedPoint(event.getHistoricalX(i), event.getHistoricalY(i), event.getHistoricalEventTime(i)))
         }
         if (stroke.size < maxPointsPerStroke) {
-          stroke.add(CapturedPoint(event.x, event.y, SystemClock.elapsedRealtime()))
+          stroke.add(CapturedPoint(event.x, event.y, event.eventTime))
         }
         invalidate()
       }
